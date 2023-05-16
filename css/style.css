@@ -1,69 +1,291 @@
-h1{
-    color:#FFFFFF;
-    font-family: 'Play', bold;
+/*Imports*/
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:wght@700&display=swap");
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* GLOBALS */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*Helpers*/
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Helpers */
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    background-color: #0d2c54;
+}
+
+header .navbar {
+    min-height: 10vh;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    height: 60px;
+    flex-basis: 30%;
+}
+
+header .menu {
+    flex-basis: 40%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+}
+
+header .menu__item,
+header .menu__item--active {
+    border: 2px solid var(--segundo);
+}
+
+header .menu__item--active {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+header .menu__item a:hover,
+header .menu__item--active a:hover {
+    color: #7FB800;
+    transition: color .2s ease-in-out;
+}
+
+header .menu .menu__link {
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #ffffff;
+    text-decoration: none;
+    justify-content: space-around;
+
+}
+
+#btn {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #7FB800;
+    padding: 3px 20px;
+    text-decoration: none;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .3s;
+}
+
+#btn #btn:hover {
+    background-color: #b9b9b9;
+}
+
+/* FIN DE HEADER*/
+
+/*EFECTO PARALLAX */
+.contenedor .cuerpo-medio {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+.contenedor .cuerpo-medio .parallax .text-container {
+    line-height: 1.2;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.contenedor .cuerpo-medio .parallax .text-container .inner-container .titulo {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 90%;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 6vw;
+    line-height: 0px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: #000000 2px 2px;
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.contenedor .cuerpo-medio .parallax .text-container .inner-container .subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 4vw;
+    line-height: 0px;
+    text-align: center;
+    color: #7FB800;
+    text-shadow: #000000 2px 2px;
+    display: inline-block;
+    position: absolute;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.contenedor .cuerpo-medio .parallax .text-container .inner-container .swipe {
+    font-family: "Bebas Neue", cursive;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: #000000 2px 2px;
+    display: inline-block;
+    position: absolute;
+    top: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.contenedor .parallax {
+    background-color: #efefef;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor .efecto {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/images/smartmockups_lgf770cb.jpg);
+    box-shadow: 15px #000000;
+    position: relative;
+}
+
+
+/*h1 .titulo_inicio {
+    color: #FFFFFF;
+    font-family: 'Anton', sans-serif;
     font-weight: 400;
     font-size: 32;
     text-align: center;
     text-decoration: underline;
 }
-h2{
-    color:#FFFFFF;
-    font-family: 'Play', serif;
+
+h2 {
+    color: #FFFFFF;
+    font-family: 'Anton', sans-serif;
     font-weight: 400;
     font-size: 32;
-    text-align:left;
+    text-align: left;
     text-decoration: underline;
 }
-h3{
-    color:#FFFFFF;
-    font-family: 'Roboto', serif;
+
+h3 {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16;
     text-align: left;
     text-decoration: underline;
 }
-p{
-    color:#7fb800;
-    font-family:'Roboto', serif;
+
+p {
+    color: #7fb800;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14;
     text-align: justify;
 }
-ul li{
-    color:#FFFFFF;
-    font-family: 'Roboto', serif;
+
+ul li {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14;
 }
-ol li{
-    color:#FFFFFF;
-    font-family: 'Roboto', serif;
+
+ol li {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14;
     list-style-type: upper-roman;
 }
-img{
+
+img {
     position: center;
     left: 100px;
 }
-header{
-    background-color: #0d2c54;
-    text-align: center;
-}
-body{
-    background-color: #0d2c54;
-}
-footer{
+
+
+
+
+
+footer {
     background-color: #7fb800;
     text-align: center;
 }
 
 .ref {
-    Color:#FFFFFF;
-    font-family: 'Play', bold;
+    Color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 32;
 }
-
-/*font-family: 'Play', sans-serif;
-font-family: 'Roboto', sans-serif;*/
