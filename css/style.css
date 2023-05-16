@@ -218,8 +218,11 @@ a:active {
     position: relative;
 }
 
+.team {
+    width: 100px;
+}
 
-/*h1 .titulo_inicio {
+*h1 .titulo_inicio {
     color: #FFFFFF;
     font-family: 'Anton', sans-serif;
     font-weight: 400;
@@ -273,10 +276,6 @@ img {
     position: center;
     left: 100px;
 }
-
-
-
-
 
 footer {
     background-color: #7fb800;
