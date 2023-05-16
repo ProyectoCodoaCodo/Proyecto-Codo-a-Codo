@@ -17,41 +17,75 @@
         <title>AGENDASH | Make it simple.</title>
     </head>
 <body>
-    
+
     <header>
-        <nav>
-            <img id="ir_arriba" src="../images/logoheader.png" alt="AGENDASH">
-            <a href="../pages/agendash.html">Agendash</a>
-            <a href="../pages/contacto.html">Contacto</a>
-            <a href="../pages/formulario.html">Formulario</a>
-            <a href="../index.html">Inicio</a>
+        <!--Menu-->
+        <nav class="navbar flex-row container-fluid">
+            <!--Imagen cabecera-->
+            <picture class="logo">
+                <a href="index.html"><img src="../images/logoheader.png" id="shortcut" alt="AGENDASH"
+                        class="logo">
+            </picture>
+            <!--Menu Items-->
+            <ul class="menu flex-row">
+                <li class="menu__item">
+                    <a href= "index.html" class="menu__link">HOME</a>
+                </li>
+                <li class="menu__item">
+                    <a href="equipo.html" class="menu__link"> EQUIPO </a>
+                </li>
+                <li class="menu__item">
+                    <a href="contacto.html" class="menu__link"> FORMULARIO </a>
+                </li>
+                <li class="menu__item">
+                    <div class="button">
+                        <input type="button" value="Descarga" id="btn">
+                    </div>
+                </li>
+            </ul>
         </nav>
     </header>
     
     <main>
-        <center><h1>NUESTRO EQUIPO</center>
+        <center><h1 class="h1">NUESTRO EQUIPO</center>
             <div>
                 <p>
-                    <center><table>
+                    <center><table border="1px">
                     <tr>
                         <td><center><img src="../images/emiliana.jpg" alt="Emiliana Medina Porta" title= "Emiliana Medina" width="100px"></center></td>
-                        <td>Emiliana Medina Porta
-                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam cupiditate</li></td>
+                        <td class="title">Emiliana Medina Porta
+                            <ul class="list">
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam cupiditate</li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam cupiditate</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <td><center><img src="../images/fabian.jpg" alt="Fabian Zandri" title= "Fabian Zandri" width="100px"></center></td>
-                        <td>Fabian Zandri
-                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam cupiditate</li></td>
+                        <td class="title">Fabian Zandri
+                            <ul class="list">
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam cupiditate</li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam cupiditate</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <td><center><img src="../images/malena.jpeg" alt="Malena Soiza Dinis" title= "Malena Soiza" width="100px"></center></td>
-                        <td>Malena Soiza Dinis
-                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam cupiditate</li></td>
+                        <td class="title">Malena Soiza Dinis
+                            <ul class="list">
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam cupiditate</li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam cupiditate</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <td><center><img src="../images/ivan.jpg" alt="Ivan Bustos" title= "Ivan Bustos" width="100px"></center></td>
-                        <td>Ivan Bustos
-                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam cupiditate</li></td>
+                        <td class="title">Ivan Bustos
+                            <ul class="list">
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam cupiditate</li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam cupiditate</li>
+                            </ul>
+                        </td>
                     </tr>
                     </table></center>
                 </p>

@@ -218,11 +218,7 @@ a:active {
     position: relative;
 }
 
-.team {
-    width: 100px;
-}
-
-*h1 .titulo_inicio {
+/*h1 .titulo_inicio {
     color: #FFFFFF;
     font-family: 'Anton', sans-serif;
     font-weight: 400;
