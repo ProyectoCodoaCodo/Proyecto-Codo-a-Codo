@@ -218,6 +218,52 @@ a:active {
     position: relative;
 }
 
+.title {
+    color:  #0d2c54;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.list {
+    color: #000000;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.h1{
+    color:#7FB800;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+header {
+    background-color: #0d2c54;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    background-color: #0d2c54;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+}
+
+td{
+    padding-top: 30px;
+}
+
+table{
+    border-spacing: 15px;
+    padding: 50px;
+}
+
 /*h1 .titulo_inicio {
     color: #FFFFFF;
     font-family: 'Anton', sans-serif;
