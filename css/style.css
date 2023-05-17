@@ -244,6 +244,7 @@ header {
     background-color: #0d2c54;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -264,69 +265,32 @@ table{
     padding: 50px;
 }
 
-/*h1 .titulo_inicio {
-    color: #FFFFFF;
-    font-family: 'Anton', sans-serif;
-    font-weight: 400;
-    font-size: 32;
-    text-align: center;
-    text-decoration: underline;
-}
+@media screen and (max-width: 600px) {
+    table {
+        width:100%;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
 
-h2 {
-    color: #FFFFFF;
-    font-family: 'Anton', sans-serif;
-    font-weight: 400;
-    font-size: 32;
-    text-align: left;
-    text-decoration: underline;
-}
-
-h3 {
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16;
-    text-align: left;
-    text-decoration: underline;
-}
-
-p {
-    color: #7fb800;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 14;
-    text-align: justify;
-}
-
-ul li {
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 14;
-}
-
-ol li {
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 14;
-    list-style-type: upper-roman;
-}
-
-img {
-    position: center;
-    left: 100px;
-}
-
-footer {
-    background-color: #7fb800;
-    text-align: center;
-}
-
-.ref {
-    Color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 32;
+    footer{
+        position: inherit;
+    }
 }
