@@ -1,68 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
-        <img id="ir_arriba" src="../images/logoheader.png" alt="AGENDASH">
-        <a href="../pages/agendash.html" class="ref">Agendash</a>
-        <a href="../pages/equipo.html" class="ref">Equipo</a>
-        <a href="../pages/formulario.html" class="ref">Formulario</a>
-        <a href="../index.html" class="ref">Inicio</a>
-
-    </header>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
-    <title>AGENDASH</title>
-    <meta name="description" content="AGENDASH Make it simple.">
-    <meta name="keywords" content="SIMPLE, SEGURO, CONFIABLE, ORGANIZACIÓN, FINANZAS, ORDEN, HÁBITOS, CONTROL">
-    <link rel="shortcut icon" href="../images/favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="AGENDASH Make it simple.">
+        <meta name="keywords" content="SIMPLE, SEGURO, CONFIABLE, ORGANIZACIÓN, FINANZAS, ORDEN, HÁBITOS, CONTROL">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../images/favicon.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="../../css/style.css">
+        <title>AGENDASH | Make it simple.</title>
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/98a0881bb4.js" crossorigin="anonymous"></script>
+        <!-- ANIMATE CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <!--Javascript-->
+        <script src="../Js/Contacto.js"></script>
+    </head>
 <body>
-    <div>
-        <form action="../pages/showdata.html" target="_blank">
-            <fieldset>
-                <legend>Datos personales</legend>
-                <label for="firstname">Nombre: </label>
-                <input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aquí...">
-                <label for="lastname">Apellido:</label>
-                <input size="30" type="text" name="lastname" placeholder="Ingrese su apellido aquí...">
-                <br><br>
-                <label for="street">Dirección:</label>
-                <input type="text" name="address" placeholder="Ingrese su dirección aquí...">
-                <label for="city">Ciudad: </label>
-                <input type="text" name="city" placeholder="Ingrese su ciudad aquí...">
-                <br><br>
-                <label for="zipcode">Código Postal:</label>
-                <input type="text" name="zipcode" placeholder="Ingrese su codigo postal aquí...">
-                <label for="telefono">Teléfono: </label>
-                <input type="tel" name="telefono" placeholder="Ingrese su teléfono aquí....">
-                <br><br>
-                <label for="BirthDate">Fecha Nac.(mm/dd/yyyy): </label>
-                <input type="date" name="birthdate">
-                <br><br>
-                <label for="email">Correo electrónico:</label>
-                <input type="email" name="Correo electrónico" placeholder="Ingrese su correo electrónico aquí....">
-                <p>Género
-                    <input type="radio" name="gender" value="hombre" checked>Hombre
-                    <input type="radio" name="gender" value="Mujer">Mujer
-                    <input type="radio" name="gender" value="Otro"> Otro
+    <header>
+        <!--Menu-->
+        <nav class="navbar flex-row container-fluid">
+            <!--Imagen cabecera-->
+            <picture class="logo">
+                <a href="../../index.html"><img src="../images/logoheader.png" id="shortcut" alt="AGENDASH"
+                        class="logo">
+            </picture>
+            <!--Menu Items-->
+            <ul class="menu flex-row">
+                <li class="menu__item">
+                    <a href="../../index.html" class="menu__link">HOME</a>
+                </li>
+                <li class="menu__item">
+                    <a href="../views/equipo.html" class="menu__link"> EQUIPO </a>
+                </li>
+                <li class="menu__item">
+                    <a href="../views/contacto.html" class="menu__link"> CONTACTO </a>
+                </li>
+                <li class="menu__item">
+                    <div class="boton-container">
+                        <a href="../views/usuario.html"><input type="button" value="Iniciar sesión"
+                                class="boton-verde-menu"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="Contacto_h1">CONTACTANOS</div>
+        
+        <DIV class="FORMULARIO">
+            
+            <div class="FORMULARIO-wrapper animated bounceInUp">
+               
+               <form id="formulario">
+                <p>
+                    <div class="Contacto_h2"><label for="firstname">Nombre/s </label></div>
+                    <input size="50" cols="2" type="text" name="firstname" placeholder="Ingresa tu/s nombre/s" id="firstname">
                 </p>
-                <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="5" cols="30"></textarea>
-                <br><br>
-                <input type="submit" value="Enviar">
-                <button type="reset">Reset</button>
-        </form>
-        <a href="#ir_arriba" class="ref">Ir Arriba</a>
-    </div>
-    
+                
+                <p>  
+                    <div class="Contacto_h2"><label for="lastname">Apellido/s</label></div>
+                    <input size="50" type="text" name="lastname" placeholder="Ingresa tu/s apellido/s" id="lastname">
+                </p>
+
+                <p>
+                    <div class="Contacto_h2"><label for="email">Mail</label></div>
+                    <input size="50" type="email" name="Mail" placeholder="Ingresa tu mail" id="Mail">
+                </p>
+
+                <p>
+                    <div class="Contacto_h2"><label for="comentarios">Comentarios/Preguntas</label></div>        
+                    <textarea name="comentarios" rows="5" cols="50"></textarea id="comentarios">
+                
+                    <input type="submit" class="FORMULARIO-ENVIAR" id="btn" value="Enviar" >
+                    
+                </p>
+                
+             </form>
+             
+                <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+                <script type="text/javascript">
+                    emailjs.init('K8Yfw9N9G15D2ZiPP')
+                </script>   
+
+                <div class="INFO-CONTACTO">
+                    <div class="Contacto_h3">
+                    INFORMACIÓN DE CONTACTO</div>
+                
+                    <li> General Paz 945, CABA</li>
+                    <li>(+54) 11 0303 456</li>
+                    <li>contacto@agendash.com</li>
+                        <br></br>
+                    <p>Estamos atentos por cualquier consulta, comentario o aporte que quieras hacer a AGENDASH</p>
+                    <p>Agendash.com</p>
+                    
+                </div> 
+            </div>  
+        </DIV>
+    </main>
     <footer>
-        <a target="_blank"href="https://www.instagram.com/" class=><img src="../images/instagram.png" alt="Instagram"></a>
-        <a target="_blank"href="https://donaronline.org/" class=><img src="../images/donar.png" alt="Donar"></a>
-        <a target="_blank"href="https://twitter.com/" class=><img src="../images/gorjeo.png" alt="Twitter"></a>
-        </footer>
+        <!--Menu-->
+        <nav class="footbar flex-row container-fluid">
+            <!--Imagen cabecera-->
+            <picture class="logo">
+                <a href="../../index.html"><img src="../images/logoheader.png" id="shortcut" alt="AGENDASH" class="logo"></a>
+                <p class="copy"> © 2023 Agendash. All Rights Reserved</p>
+            </picture>
+            <!--Menu Items-->
+            <div class="menu flex-row">
+                <h5 class="equipo">CONOCE NUESTRO EQUIPO</h5>
+                <ul class="menu flex-row">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link"><img src="../images/Facebook.png"></a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link"><img src="../images/Instagram2.png"></a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link"><img src="../images/Twitter.png"></a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link"><img src="../images/Google.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
 </body>
+    <script>
+        const btn = document.getElementById('btn');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_j388kmd';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar';
+      alert('Enviado!');
+    }, (err) => {
+      btn.value = 'Enviar';
+      alert(JSON.stringify(err));
+    });
+});
+    </script>
 </html>
