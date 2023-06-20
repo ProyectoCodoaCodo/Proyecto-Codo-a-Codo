@@ -677,7 +677,7 @@ footer .menu {
 
 /* INICIO SESIÓN */
 
-main {
+.fondo_inicio {
     background-color: #647d9f;
     width: 100%;
     height: 100vh;
