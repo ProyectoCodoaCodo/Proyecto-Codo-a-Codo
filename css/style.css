@@ -711,14 +711,6 @@ h3{
     justify-content: center;
     align-items: center;
 }
-{
-    color:#ffffff;
-    font-family: 'Play', serif;
-    font-weight: 400;
-    font-size: 48;
-    text-align: center;
-    text-decoration: underline;
-}
 .box {
     position: relative;
     width: 400px;
@@ -727,10 +719,7 @@ h3{
     border-radius: 8px;
     overflow: hidden;
     transform: translate(150%, 30%);
-
-
 }
-
 .box::before {
     content: '';
     position: absolute;
@@ -897,7 +886,7 @@ input:valid~label {
 }
 
 button {
-    width: 40%;
+    width: 40px;
     height: 40px;
     border-radius: 40px;
     background: #7FB800;
