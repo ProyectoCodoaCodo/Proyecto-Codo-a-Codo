@@ -89,7 +89,33 @@
             </div>
         </div>
     </section>
-
+<footer>
+            <h3>Algunos de nuestros usuarios</h3>
+            <div>
+                <button onclick="traer()">Conocer</button>
+                <div class="mt-5" id="contenido">
+                </div>
+            </div>
+        
+            <script>
+                var contenido = document.querySelector('#contenido');
+        
+                function traer() {
+                    fetch('https://randomuser.me/api/')
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log(data)
+                            console.log(data.results)
+                            console.log(data.results[0].email)
+                            contenido.innerHTML = /*html*/
+                                `
+                                <img src="${data.results[0].picture.large}" width="100px" class="img-fluid rounded-circle">
+                                <p>Nombre: ${data.results[0].name.first}</p>
+                                `
+                        })
+                }
+            </script>
+        </footer>
 
 </body>
 
