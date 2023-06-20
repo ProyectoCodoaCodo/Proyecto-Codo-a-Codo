@@ -683,7 +683,14 @@ footer .menu {
     height: 100vh;
     position: relative;
 }
-
+h3{
+    color:#ffffff;
+    font-family: 'Play', serif;
+    font-weight: 400;
+    font-size: 48;
+    text-align: center;
+    text-decoration: underline;
+}
 .box {
     position: relative;
     width: 400px;
