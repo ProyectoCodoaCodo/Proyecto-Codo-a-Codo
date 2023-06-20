@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="container">
+    <header>
         <!--Menu-->
         <nav class="navbar flex-row container-fluid">
             <!--Imagen cabecera-->
@@ -44,55 +44,57 @@
             </ul>
         </nav>
     </header>
-    <section class="fondo_inicio">
-        <div class="box">
-            <span class="borderLine"></span>
-            <div class="form-box">
-                <div class="form-value">
-                    <form action="">
-                        <h2 class="ingresar_sesion">Ingresá a tu cuenta</h2>
-                        <div class="inputbox">
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <input type="email" required>
-                            <label for="">Correo</label>
-                        </div>
-                        <div class="inputbox">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
-                            <input type="password" required>
-                            <label for="">Contraseña</label>
-                        </div>
-                        <div class="forget">
-                            <label for=""><input type="checkbox">Recúerdame <a href="#">Olvidaste tú contraseña</a>
-                            </label>
-                        </div>
-                        <button>Ingresar</button>
-                        <div class="register">
-                            <p>
-                                ¿No tienes cuenta? <a href="#">Regístrate</a>
-                            </p>
-                        </div>
-                        <div class="redes">
-                            <p>
-                                o ingresá con:
-                            </p>
-                        </div>
-                        <div class="redes2 flex-row">
-                            <a target="_blank" href="https://www.facebook.com/"><img src="../images/facebook2.png"
+    <main class="container">
+        <section class="fondo_inicio">
+            <div class="box">
+                <span class="borderLine"></span>
+                    <div class="form-box">
+                        <div class="form-value">
+                            <form action="">
+                                <h2 class="ingresar_sesion">Ingresá a tu cuenta</h2>
+                                    <div class="inputbox">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                            <input type="email" required>
+                                            <label for="">Correo</label>
+                                    </div>
+                                    <div class="inputbox">
+                                        <ion-icon name="lock-closed-outline"></ion-icon>
+                                        <input type="password" required>
+                                        <label for="">Contraseña</label>
+                                    </div>
+                                    <div class="forget">
+                                        <label for=""><input type="checkbox">Recúerdame <a href="#">Olvidaste tú contraseña</a>
+                                        </label>
+                                    </div>
+                                    <button>Ingresar</button>
+                                    <div class="register">
+                                    <p>
+                                        ¿No tienes cuenta? <a href="#">Regístrate</a>
+                                    </p>
+                                    </div>
+                                    <div class="redes">
+                                    <p>
+                                        o ingresá con:
+                                    </p>
+                                    </div>
+                                    <div class="redes2 flex-row">
+                                        <a target="_blank" href="https://www.facebook.com/"><img src="../images/facebook2.png"
                                     alt="Facebook"></a>
-                            <a target="_blank"
+                                        <a target="_blank"
                                 href="https://accounts.google.com/v3/signin/identifier?dsh=S704995768%3A1684764200857224&continue=https%3A%2F%2Fwww.google.com%2F%3F%2Flogin%2Flogin&ec=GAZAmgQ&hl=es-419&ifkv=Af_xneG_1WV_995hRQyPpJRPHUtFxE987sJAMZIAdrS-p7_rPBjSNGoHggZeO4rBAT5_TVSblj1ZNw&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img
                                     src="../images/buscar.png" alt="Google">
-                            </a>
+                                </a>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 <footer class="container"> 
             <h3>Algunos de nuestros usuarios</h3>
             <div>
-                <button onclick="traer()">Conocer</button>
+                <button class="container" onclick="traer()">Conocer</button>
                 <div class="mt-5" id="contenido">
                 </div>
             </div>
@@ -109,14 +111,13 @@
                             console.log(data.results[0].email)
                             contenido.innerHTML = /*html*/
                                 `
-                                <img src="${data.results[0].picture.large}" width="100px" class="img-fluid rounded-circle">
+                                <img src="${data.results[0].picture.large}">
                                 <p>Nombre: ${data.results[0].name.first}</p>
                                 `
                         })
                 }
             </script>
         </footer>
-
 </body>
 
 </html>
