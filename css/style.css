@@ -896,7 +896,7 @@ input:valid~label {
     font-weight: 600;
 }
 .usuarios {
-    width: 50%;
+    width: 25%;
     height: 40px;
     border-radius: 40px;
     background: #7FB800;
@@ -906,6 +906,7 @@ input:valid~label {
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .register {
