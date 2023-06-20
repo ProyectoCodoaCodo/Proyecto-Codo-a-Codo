@@ -45,7 +45,6 @@
         </nav>
     </header>
     <main class="container">
-        <section class="fondo_inicio">
             <div class="box">
                 <span class="borderLine"></span>
                     <div class="form-box">
@@ -89,12 +88,11 @@
                         </div>
                     </div>
                 </div>
-        </section>
     </main>
 <footer class="container"> 
             <h3>Algunos de nuestros usuarios</h3>
             <div>
-                <button class="container" onclick="traer()">Conocer</button>
+                <button onclick="traer()">Conocer</button>
                 <div class="mt-5" id="contenido">
                 </div>
             </div>
@@ -111,8 +109,8 @@
                             console.log(data.results[0].email)
                             contenido.innerHTML = /*html*/
                                 `
-                                <img src="${data.results[0].picture.large}">
-                                <p>Nombre: ${data.results[0].name.first}</p>
+                                <img class="imgdata" src="${data.results[0].picture.large}">
+                                <p class="textdata">Nombre: ${data.results[0].name.first}</p>
                                 `
                         })
                 }
