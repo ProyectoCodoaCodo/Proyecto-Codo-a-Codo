@@ -44,8 +44,10 @@ a {
 }
 
 .container {
-    max-width: 1080px;
-    margin: 0 auto;
+    width: 75vw;
+    max-width: 1200px;
+    min-width: 375px;
+    margin: auto;
 }
 
 /* HEADER */
