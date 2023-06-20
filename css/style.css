@@ -885,7 +885,7 @@ input:valid~label {
     text-decoration: underline;
 }
 
-.button {
+.boton1 {
     width: 100%;
     height: 40px;
     border-radius: 40px;
@@ -906,7 +906,9 @@ input:valid~label {
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 10px;
+    justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 .register {
