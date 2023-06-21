@@ -906,6 +906,8 @@ button {
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
     display: flex;
     flex-direction: row;
     text-align: center;
