@@ -905,7 +905,7 @@ button {
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
-    margin: 0auto;
+    margin: 50 50;
     text-align: center;
     align-items: center;
 }
