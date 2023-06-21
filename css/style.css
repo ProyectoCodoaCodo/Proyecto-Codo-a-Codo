@@ -896,6 +896,7 @@ input:valid~label {
     font-weight: 600;
 }
 .usuarios {
+    position: relative;
     width: 25%;
     height: 40px;
     border-radius: 40px;
