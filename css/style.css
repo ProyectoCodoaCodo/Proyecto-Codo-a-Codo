@@ -906,11 +906,10 @@ input:valid~label {
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align: center;
 }
 
 .register {
