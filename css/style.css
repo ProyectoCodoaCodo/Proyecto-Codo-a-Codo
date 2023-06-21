@@ -887,7 +887,7 @@ input:valid~label {
 }
 
 button {
-    width: 100%;
+    width: 40%;
     height: 40px;
     border-radius: 40px;
     background: #7FB800;
@@ -905,7 +905,6 @@ button {
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
-    /*padding-top: 20px;*/
     margin: 0 auto;
     display: flex;
     flex-direction: row;
