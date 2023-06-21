@@ -886,8 +886,7 @@ input:valid~label {
     text-decoration: underline;
 }
 
-/*button {
-    width: 40%;
+.boton-ingresar {
     height: 40px;
     border-radius: 40px;
     background: #7FB800;
@@ -895,12 +894,19 @@ input:valid~label {
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
-}*/
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .usuarios {
-    width: 100%;
     height: 40px;
     border-radius: 40px;
     background: #7FB800;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     font-size: 20px;
@@ -910,6 +916,8 @@ input:valid~label {
     flex-direction: row;
     text-align: center;
     align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .register {
