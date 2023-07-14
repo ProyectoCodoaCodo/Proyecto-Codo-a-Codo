@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <title>AGENDASH | Make it simple</title>
+    <meta name="description" content="AGENDASH Make it simple.">
+    <meta name="keywords" content="SIMPLE, SEGURO, CONFIABLE, ORGANIZACIÓN, FINANZAS, ORDEN, HÁBITOS, CONTROL">
+    <link rel="shortcut icon" href="{%  static './images/favicon.jpg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{%  static './css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <!--Menu-->
+        <nav class="navbar flex-row container-fluid">
+            <!--Imagen cabecera-->
+            <picture class="logo">
+                <a href="{% url 'index' %}"><img src="{%  static './images/logoheader.png' %}" id="shortcut" alt="AGENDASH"
+                        class="logo">
+            </picture>
+            <!--Menu Items-->
+            <ul class="menu flex-row">
+                <li class="menu__item">
+                    <a href="{% url 'index' %}" class="menu__link">HOME</a>
+                </li>
+                <li class="menu__item">
+                    <a href="{% url 'equipo' %}" class="menu__link"> EQUIPO </a>
+                </li>
+                <li class="menu__item">
+                    <a href="{% url 'contacto' %}" class="menu__link"> CONTACTO </a>
+                </li>
+                <li class="menu__item">
+                    <div class="boton-container">
+                        <a href="{% url 'usuario' %}"><input type="button" value="Iniciar sesión"
+                            class="boton-verde-menu"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="h1-equip">NUESTRO EQUIPO</h1>
+        <br><br>
+            <div class="grid-layout">
+                <div class="caja-img">
+                    <img class="img-style" src="{%  static './images/emiliana.png' %}" alt="Emiliana Medina Porta" title= "Emiliana Medina">
+                </div>
+                <div class="caja-txt">
+                    <ul>
+                        <br><br>
+                        <h2 class="h2-style-blue">Emiliana Medina</h2>
+                        <li class="li-style">emimediporta@agendash.com</li>
+                    </ul>
+                </div>
+                <div class="caja-img">
+                    <img class="img-style" src="{%  static './images/fabian.png' %}" alt="Fabian Zandri" title= "Fabian Zandri">
+                </div>
+                <div class="caja-txt">
+                    <ul>
+                        <br><br>
+                        <h2 class="h2-style-blue">Fabián Zandri</h2>
+                        <li class="li-style">fabzandri@agendash.com</li>
+                    </ul>
+                </div>
+                <div class="caja-img">
+                    <img class="img-style" src="{%  static './images/malena.png' %}" alt="Malena Soiza Dinis" title= "Malena Soiza">
+                </div>
+                <div class="caja-txt">
+                    <ul>
+                        <br><br>
+                        <h2 class="h2-style-blue">Malena Soiza</h2>
+                        <li class="li-style">malesoidinis@agendash.com</li>
+                    </ul>
+                </div>
+                <div class="caja-img">
+                    <img class="img-style" src="{%  static './images/ivan.png' %}" alt="Ivan Bustos" title= "Ivan Bustos">
+                </div>
+                <div class="caja-txt">
+                    <br><br>
+                    <ul>
+                        <h2 class="h2-style-blue">Iván Bustos</h2>
+                        <li class="li-style">ivanbustos@agendash.com</li>
+                    </ul>
+                </div>
+            </div>
+        </h1>
+    </main>
+    <footer>
+        <!--Menu-->
+        <nav class="footbar flex-row container-fluid">
+            <!--Imagen cabecera-->
+            <picture class="logo">
+                <a href="{% url 'index' %}"><img src="{%  static './images/logoheader.png' %}" id="shortcut" alt="AGENDASH"
+                        class="logo"></a>
+                <p class="copy"> © 2023 Agendash. All Rights Reserved</p>
+            </picture>
+            <!--Menu Items-->
+            <div class="menu flex-row">
+                <h5 class="equipo">CONOCE NUESTRO EQUIPO</h5>
+                <ul class="menu flex-row">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link"><img src="{%  static './images/Facebook.png' %}"></a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link"><img src="{%  static './images/Instagram2.png' %}"></a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link"><img src="{%  static './images/Twitter.png' %}"></a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link"><img src="{%  static './images/Google.png' %}"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <title>AGENDASH | Make it simple</title>
+    <meta name="description" content="AGENDASH Make it simple.">
+    <meta name="keywords" content="SIMPLE, SEGURO, CONFIABLE, ORGANIZACIÓN, FINANZAS, ORDEN, HÁBITOS, CONTROL">
+    <link rel="shortcut icon" href="{%  static './images/favicon.jpg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{%  static './css/style.css' %}">
+</head>
+
+<body>
+    <section class="contenedor">
+        <header>
+            <!--Menu-->
+            <nav class="navbar flex-row container-fluid">
+                <!--Imagen cabecera-->
+                <picture class="logo">
+                    <a href="{% url 'index' %}"><img src="{%  static './images/logoheader.png' %}" id="shortcut" alt="AGENDASH"
+                            class="logo">
+                </picture>
+                <!--Menu Items-->
+                <ul class="menu flex-row">
+                    <li class="menu__item">
+                        <a href="{% url 'index' %}" class="menu__link">HOME</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'equipo' %}" class="menu__link"> EQUIPO </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="{% url 'contacto' %}" class="menu__link"> CONTACTO </a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="boton-container">
+                            <a href="{% url 'usuario' %}"><input type="button" value="Iniciar sesión"
+                                    class="boton-verde-menu"></a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--Efecto parallax-->
+            <section class="cuerpo-medio">
+                <div class="parallax efecto">
+                    <!-- Titulo -->
+                    <div class="text-container container-fluid">
+                        <div class="inner-container">
+                            <h1 class="titulo"> AGENDASH</h1>
+                            <p class="subtitulo"> Make It Simple</p>
+                            <p class="swipe">Desliza hacia arriba</p>
+                        </div>
+                    </div>
+                </div>
+            </section parrafos_container>
+            <!-- Texto -->
+            <section class="proyects grid-template-columns">
+                <section class="proyects__1">
+                    <img src="{%  static './images/Mockup 1.png' %}" alt="example 1" id="proyect__img__1" class="izquierda">
+                </section>
+                <section class="proyects__2">
+                    <h2 id="proyects__items__1" class="derecha">No vuelvas a olvidar una tarea importante.</h2>
+                    <p id="proyect__text__1" class="derecha">
+                        <br>Decile adiós a las notas dispersas y a las fechas de pagos olvidados con
+                        Agendash. Nuestra aplicación
+                        te permite crear y gestionar fácilmente listas de control para todos tus pagos. Deshazte de las
+                        notas adhesivas y consigue tu Agendash.
+                    </p>
+                    <div class="boton-container">
+                        <a href="https://www.ejemplo.com"><input type="button" value="Descarga Agendash"
+                                class="boton-verde"></a>
+                    </div>
+                </section>
+                <section class="proyects__3">
+                    <img src="{%  static './images/Mockup 2.png' %}" alt="example 2" id="proyect__img__2" class="izquierda">
+                </section>
+                <section class="proyects__4">
+                    <h2 id="proyects__items__2" class="derecha">Toda tu agenda organizada al 100%</h2>
+                    <p id="proyect__text__2" class="derecha"> <br>Simple: Agendash te ofrece listas en las que guardar todos tus
+                        datos
+                        para
+                        mantenerte organizado.
+                        Accedé desde tu móvil, computadora o tableta, para que puedas estar al tanto de las tareas estés
+                        donde estés.
+                        <br> <br>
+                        Seguro: contamos con normas de seguridad biométricas para que solo vos puedas tener el control
+                        total
+                        de tus acciones.
+                        <br> <br>Confiable: tus finanzas estarán bajo tu lupa, ofreciéndote balances de gastos
+                        y alarmas de vencimientos, para que no te pierdas de nada ni gastes de más.
+                    </p>
+                </section>
+            </section>
+            <section id="proyect-title">
+                <h2 class="text_proyect">Simple. Seguro. Confiable</h2>
+                <p class="proyect_text">Con Agendash, nunca volverás a olvidar una tarea o una fecha de pago.
+                    <br>Descárgate nuestra
+                    aplicación y hace tu vida más simple.</p>
+                <div class="boton-container">
+                    <a href="https://www.ejemplo.com"><input type="button" value="Descarga Agendash"
+                            class="boton-verde"></a>
+                </div>
+            </section>
+        </main>
+        <!-- Formulario -->
+        <footer>
+            <!--Menu-->
+            <nav class="footbar flex-row container-fluid">
+                <!--Imagen cabecera-->
+                <picture class="logo">
+                    <a href="{% url 'index' %}"><img src="{%  static './images/logoheader.png' %}" id="shortcut" alt="AGENDASH"
+                            class="logo"></a>
+                    <p class="copy"> © 2023 Agendash. All Rights Reserved</p>
+                </picture>
+                <!--Menu Items-->
+                <div class="menu flex-row">
+                    <h5 class="equipo">CONOCE NUESTRO EQUIPO</h5>
+                    <ul class="menu flex-row">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link"><img src="{%  static './images/Facebook.png' %}"></a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link"><img src="{%  static './images/Instagram2.png' %}"></a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link"><img src="{%  static './images/Twitter.png' %}"></a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link"><img src="{%  static './images/Google.png' %}"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+    </section>
+    <script src="{%  static './js/app.js' %}"></script>
+</body>
+
+</html>
